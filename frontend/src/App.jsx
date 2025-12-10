@@ -1,20 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import "./index.css"
+import { useState } from "react";
+
+import "./App.css";
+import "./index.css";
 import { FaArrowCircleRight } from "react-icons/fa";
-import Body from './components/Body'
-import Nav from "./components/Nav"
-  
+import Body from "./components/ui/Body";
+import Nav from "./components/layout/Nav";
+
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
-
-
     <div
-
       style={{
         position: "relative",
         width: "100%",
@@ -36,57 +32,63 @@ function App() {
           zIndex: -1,
         }}
       >
-        <source src="Pixel Winter Landscape, Snowy Mountains, Retro Pixel Art, Peaceful Winter Forest.mp4" type="video/mp4" />
+        <source
+          src="Pixel Winter Landscape, Snowy Mountains, Retro Pixel Art, Peaceful Winter Forest.mp4"
+          type="video/mp4"
+        />
       </video>
 
       <div
-
         style={{
           color: "white",
         }}
       >
         <Nav />
-        <div className='py-10'>
-          <div className='body gap-20 '>
+        <div className="py-10">
+          <div className="body gap-20 ">
             <div>
-              <p className='body-text text-7xl'>FUTURE-READY,</p>
-              <p className='body-text text-7xl'>SMART LEARNING</p>
+              <p className="body-text text-7xl">FUTURE-READY,</p>
+              <p className="body-text text-7xl">SMART LEARNING</p>
             </div>
-            <div className='flex gap-50'>
-              <div className='buttons flex items-center gap-10'>
-                <p className='text-center -tracking-tighter'>Get Started</p>
+            <div className="flex gap-50">
+              <div className="buttons flex items-center gap-10">
+                <p className="text-center -tracking-tighter">Get Started</p>
                 <FaArrowCircleRight size={40} />
               </div>
-              <div className='buttons flex items-center gap-5 tracking-wider'>
-                <p className='text-center'>Explore More</p>
+              <div className="buttons flex items-center gap-5 tracking-wider">
+                <p className="text-center">Explore More</p>
                 <FaArrowCircleRight size={40} />
               </div>
             </div>
-
           </div>
-
         </div>
         <Body />
         <div class="wrapper pb-100">
           <div class="box ">
             <div>
-              <p className='text-black text-center text-6xl pt-10' style={{ lineHeight: "1.5", letterSpacing: "10px" }}>NEXUS IS BULIT ON </p>
+              <p
+                className="text-black text-center text-6xl pt-10"
+                style={{ lineHeight: "1.5", letterSpacing: "10px" }}
+              >
+                NEXUS IS BULIT ON{" "}
+              </p>
             </div>
-            <div className='px-100 py-20' >
+            <div className="px-100 py-20">
               <img src="Qualified.png" alt="" />
             </div>
             <div>
-              <p className='text-black text-center text-2xl tracking-wider'>The world's most advanced coding assessment platform for <br />organizations looking to scale their hiring, upskilling, and <br /> certification programs.</p>
+              <p className="text-black text-center text-2xl tracking-wider">
+                The world's most advanced coding assessment platform for <br />
+                organizations looking to scale their hiring, upskilling, and{" "}
+                <br /> certification programs.
+              </p>
             </div>
-            <div className='p-20'></div>
-
-
+            <div className="p-20"></div>
           </div>
         </div>
-
       </div>
     </div>
-  )
+  );
 }
 export default App;
-""
+("");
