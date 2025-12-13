@@ -1,22 +1,20 @@
-import React from "react";
+import logo from "../../assets/logo.png";
 
 const Nav = () => {
   return (
-    <>
-      <nav className="px-1">
-        <div className="nav flex gap-50">
-          <div className="logo py-5">
-            <img className="h-20" src="frontend\src\assets\logo.png" alt="" />
-          </div>
-          <div className="nav-buttons flex gap-10 py-10 px-10">
-            <p>Train</p>
-            <p>Practice</p>
-            <p>About</p>
-            <p>Shop</p>
-          </div>
-        </div>
-      </nav>
-    </>
+    <nav className="flex items-center justify-between px-12 py-6 text-white font-[var(--font-pixel)] tracking-widest">
+      <div className="flex items-center gap-4">
+        <img src={logo} alt="Nexus" className="h-10" />
+        <span className="text-xl">NEXUS</span>
+      </div>
+
+      <div className="flex gap-12 text-lg">
+        <span className="cursor-pointer hover:opacity-70">TRAIN</span>
+        <span className="cursor-pointer hover:opacity-70">PRACTICE</span>
+        <span className="cursor-pointer hover:opacity-70">ABOUT</span>
+        <span className="cursor-pointer hover:opacity-70">SHOP</span>
+      </div>
+    </nav>
   );
 };
 

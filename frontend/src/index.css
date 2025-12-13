@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@font-face {
+  font-family: "ARCADECLASSIC";
+  src: url("/src/assets/ARCADECLASSIC.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Extend Tailwind theme (v4 way) */
+@theme {
+  --font-pixel: "ARCADECLASSIC", monospace;
+}
